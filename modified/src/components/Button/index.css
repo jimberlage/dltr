@@ -1,0 +1,79 @@
+.p-button { @apply
+  relative
+  inline-flex
+  items-center
+  justify-center
+  whitespace-nowrap
+  rounded-md
+  border
+  border-transparent
+  text-sm
+  font-medium
+  ring-offset-background
+  transition-colors
+  focus-visible:outline-none
+  focus-visible:ring-2
+  focus-visible:ring-focus-ring
+  focus-visible:ring-offset-2
+  disabled:pointer-events-none
+  disabled:opacity-50
+  select-none
+  aria-selected:bg-[color:var(--p-color-button-selected-bg)]
+  aria-selected:text-[color:var(--p-color-button-selected-text)]
+  aria-selected:border-[color:var(--p-color-button-selected-border)]
+}
+
+.p-button--default { @apply
+  bg-primary
+  text-primary-foreground
+  hover:bg-primary/90
+  active:bg-primary/80
+}
+
+.p-button--outline { @apply
+  border
+  border-input
+  bg-background
+  hover:bg-accent
+  hover:text-accent-foreground
+  active:bg-accent/60
+}
+
+.p-button--ghost { @apply
+  hover:bg-accent
+  hover:text-accent-foreground
+  active:bg-accent/60
+}
+
+.p-button--destructive { @apply
+  bg-destructive
+  text-destructive-foreground
+  hover:bg-destructive/90
+  active:bg-destructive/80
+}
+
+.p-button--link { @apply
+  text-primary
+  underline-offset-4
+  hover:underline
+}
+
+.p-button__content { @apply
+  gap-1
+  inline-flex
+  flex-grow
+  justify-center
+  items-center
+  font-normal
+}
+
+.p-button__icon { @apply
+  shrink-0
+  grow
+}
+
+.p-button__loading-icon {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}

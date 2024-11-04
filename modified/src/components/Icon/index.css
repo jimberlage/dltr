@@ -1,0 +1,16 @@
+.p-icon { @apply
+  w-5
+  h-5
+}
+
+.p-icon--sm,
+.p-icon--small { @apply
+  w-4
+  h-4
+}
+
+.p-icon--lg,
+.p-icon--large { @apply
+  w-6
+  h-6
+}

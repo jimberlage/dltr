@@ -1,0 +1,7 @@
+.delete-modal__icon { @apply
+  stroke-sentiment-negative
+}
+
+.delete-modal__title { @apply
+  capitalize
+}
